@@ -1,2 +1,8 @@
 frontend/node_modules
 frontend/dist
+build
+wails-study-res.syso
+wails-study.exe.manifest
+wails-study.ico
+wails-study.rc
+appicon.png
