@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>{{message}}</h1>
+    <h1>{{ message }}</h1>
     <a @click="getMessage">Press Me!</a>
   </div>
 </template>
@@ -9,17 +9,18 @@
 export default {
   data() {
     return {
-      message: " "
+      message: " ",
     };
   },
   methods: {
-    getMessage: function() {
+    getMessage: function () {
       var self = this;
-      window.backend.basic().then(result => {
+      console.log(window.backend);
+      window.backend.RandomInt().then((result) => {
         self.message = result;
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
